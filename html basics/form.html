@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <!-- ctrl + / -->
+        <!-- First name -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" required value="Name"><br><br>
+        <!-- last name -->
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" value="A" readonly><br><br>
+        <label for="cars">Course:</label>
+
+        <select id="dept">
+            <option>Course</option>
+            <option value="html">HTML</option>
+            <option value="saab">CSS</option>
+            <option value="mercedes">JS</option>
+            <option value="audi">Angular</option>
+
+        </select><br><br>
+        <label for="gender">Gender</label><br>
+        <input type="radio" id="gender" name="gender" value="male" />Male <br>
+        <input type="radio" id="gender" name="gender" value="female" />Female <br />
+        <input type="radio" id="gender" name="gender" value="others" />others <br /><br><br>
+
+        <!-- <label for="gender">Gender: </label>
+        <input type="radio" id="gender" name="gender" value="male" />Male
+        <input type="radio" id="gender" name="gender" value="female" />Female <br /> -->
+
+        <label for="hobby">Hobbies <br>
+            <input type="checkbox" id="hobby" value="Programming">Programming<br>
+            <input type="checkbox" id="hobby" value="reading">Reading<br>
+            <input type="checkbox" id="hobby" value="dance">Dancing<br>
+
+        </label>
+        <label for="card">AadharCard</label>
+        <input type="file" id="card"><br>
+        <label>Color</label>
+        <input type="color"><br>
+        <label>Range</label>
+        <input type="range"><br>
+        <label>Date</label>
+        <input type="date"><br>
+        <!-- <label>hidden</label> -->
+        <!-- <input type="hidden"> -->
+        <label>Password</label>
+        <input type="password"><br>
+        <label for="phone">Phone</label><br>
+        <input type="text" id="phone" pattern="^[789]\d{9,9}$"><br><br>
+        <label for="add">Address</label>
+        <textarea name="add" id="add"></textarea><br><br>
+        <label>Age</label>
+        <input type="number" min="18" max="50">
+        <label for="email">Email</label>
+        <input type="email" id="email"><br><br>
+        <Label>ZIP Code</Label>
+        <input type="text" pattern="[0-9]{5}" maxlength="6" title="Please enter a Zip Code" /><br><br>
+        <label>Department<label>
+                <select>
+                    <option selected disabled hidden>DropDown</option>
+                    <option>MCA</option>
+                    <option>MBA</option>
+                    <option>BE</option>
+                </select>
+                <br><br>
+                <button value="submit" disabled>Submit</button>
+                <button value="reset">Reset</button>
+    </form>
+</body>
+
+</html>

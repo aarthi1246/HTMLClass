@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="matchfirst.css"> -->
+    <style>
+        p:first-child i {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Match the first <i> element in all <p> elements -->
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.<i>Wrong</i></p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+    <!-- Match all <i> elements in all first child <p> elements -->
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+    <div>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+</body>
+
+</html>

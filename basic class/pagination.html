@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Example</title>
+    <style>
+        /* Add some basic styling for demonstration purposes */
+        #content {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .pagination {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .pagination li {
+            margin: 0 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .pagination li.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="content">
+        <!-- Content will be dynamically generated here based on the current page -->
+    </div>
+
+    <ul class="pagination" id="pagination"></ul>
+
+    <script>
+        // Sample data (replace this with your actual data)
+        const data = Array.from({
+            length: 30
+        }, (_, index) => `Item ${index + 1}`);
+
+        const itemsPerPage = 5;
+        let currentPage = 1;
+
+        function displayData(currentPage) {
+            const contentContainer = document.getElementById('content');
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const currentItems = data.slice(startIndex, endIndex);
+
+            contentContainer.innerHTML = '';
+            currentItems.forEach(item => {
+                const listItem = document.createElement('div');
+                listItem.textContent = item;
+                contentContainer.appendChild(listItem);
+            });
+        }
+
+        function setupPagination() {
+            const paginationContainer = document.getElementById('pagination');
+            const totalPages = Math.ceil(data.length / itemsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const listItem = document.createElement('li');
+                listItem.textContent = i;
+
+                if (i === currentPage) {
+                    listItem.classList.add('active');
+                }
+
+                listItem.addEventListener('click', () => {
+                    currentPage = i;
+                    displayData(currentPage);
+
+                    // Update active state in pagination
+                    document.querySelectorAll('.pagination li').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    listItem.classList.add('active');
+                });
+
+                paginationContainer.appendChild(listItem);
+            }
+        }
+
+        // Initial setup
+        displayData(currentPage);
+        setupPagination();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .pagination-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .pagination {
+            display: flex;
+            list-style: none;
+            margin-right: 10px;
+        }
+
+        .pagination li {
+            margin: 0 5px;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .pagination a:hover {
+            background-color: #ddd;
+        }
+
+        .pagination .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .navigation-buttons button {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #333;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .navigation-buttons button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="content"></div>
+    <div class="pagination-container">
+        <ul class="pagination" id="pagination"></ul>
+        <div class="navigation-buttons">
+            <button onclick="onPreviousClick()">Previous</button>
+            <button onclick="onNextClick()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        const totalItems = 50;
+        const itemsPerPage = 10;
+        let currentPage = 1;
+
+        function generateContent() {
+            const contentElement = document.getElementById('content');
+            contentElement.innerHTML = '';
+
+            const startItem = (currentPage - 1) * itemsPerPage + 1;
+            const endItem = Math.min(currentPage * itemsPerPage, totalItems);
+
+            for (let i = startItem; i <= endItem; i++) {
+                const itemElement = document.createElement('div');
+                itemElement.textContent = `Item ${i}`;
+                contentElement.appendChild(itemElement);
+            }
+        }
+
+        function generatePagination() {
+            const paginationElement = document.getElementById('pagination');
+            paginationElement.innerHTML = '';
+
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const liElement = document.createElement('li');
+                const aElement = document.createElement('a');
+                aElement.href = '#';
+                aElement.textContent = i;
+                aElement.addEventListener('click', () => onPageClick(i));
+
+                if (i === currentPage) {
+                    liElement.classList.add('active');
+                }
+
+                liElement.appendChild(aElement);
+                paginationElement.appendChild(liElement);
+            }
+        }
+
+        function onPageClick(page) {
+            currentPage = page;
+            generateContent();
+            generatePagination();
+        }
+
+        function onPreviousClick() {
+            if (currentPage > 1) {
+                currentPage--;
+                generateContent();
+                generatePagination();
+            }
+        }
+
+        function onNextClick() {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                generateContent();
+                generatePagination();
+            }
+        }
+
+        generateContent();
+        generatePagination();
+    </script>
+
+</body>
+
+</html>

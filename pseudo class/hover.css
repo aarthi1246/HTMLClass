@@ -1,0 +1,21 @@
+/* .hover {
+    text-align: center;
+    border: 2px solid green;
+}
+
+h1:hover {
+    color: red;
+}
+
+h2:hover {
+    color: blue;
+} */
+
+
+h1:hover {
+    background-color: blue;
+}
+
+h2:hover {
+    color: yellow;
+}

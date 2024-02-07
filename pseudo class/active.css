@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+a:active {
+    color: yellow;
+}
+
+a:visited {
+    color: red;
+}
+
+h1,
+h2,
+h3 {
+    color: red;
+    ;
+}
+
+/* button:active {
+    color: red;
+    background-color: aqua;
+} */

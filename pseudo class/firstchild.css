@@ -1,0 +1,11 @@
+p:first-child {
+    color: blue;
+}
+
+li:first-child {
+    color: aqua;
+}
+
+div p:first-child {
+    color: red;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 50px;
+            margin: 20px;
+            border: 6px ridge red;
+            width: 300px;
+            float: left;
+            height: 150px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        #one {
+            border-radius: 90px;
+            background: lightgreen;
+        }
+
+        #two {
+            border-radius: 45% 20%;
+            background: orange;
+        }
+
+        /* The first value (25%) represents the horizontal radius for all corners.
+            The second value (10%) represents the vertical radius for all corners. */
+
+        #three {
+            border-radius: 35px 50px 10%;
+            background: cyan;
+        }
+
+        /* 35px: This value represents the radius for the top-left corner.
+            10em: This value represents the radius for the top-right corner.
+            10%: This value represents the radius for the bottom-right and bottom-left corners. */
+
+        #four {
+            border-radius: 50px 50% 50cm 50em;
+            background: lightblue;
+        }
+
+        /* 50px: This value represents the radius for the top-left corner.
+            50%: This value represents the radius for the top-right corner.
+            50cm: This value represents the radius for the bottom-right corner.
+            50em: This value represents the radius for the bottom-left corner. */
+    </style>
+</head>
+
+<body>
+    <div id="one">
+        <h2> Welcome to the CRUD ACADEMY </h2>
+        <p> border-radius: 90px; </p>
+    </div>
+    <div id="two">
+        <h2> Welcome to the CRUD ACADEMY</h2>
+        <p> border-radius: 25% 10%; </p>
+    </div>
+    <div id="three">
+        <h2> Welcome to the CRUD ACADEMY </h2>
+        <p> border-radius: 35px 10em 10%; </p>
+    </div>
+    <div id="four">
+        <h2>Welcome to the CRUD ACADEMY</h2>
+        <p>border-radius: 50px 50% 50cm 50em;</p>
+    </div>
+</body>
+
+</html>

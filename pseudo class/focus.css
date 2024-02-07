@@ -1,0 +1,10 @@
+form {
+    text-align: center;
+}
+
+input:focus {
+    border: 5px solid skyblue;
+    box-shadow: 5px 5px 5px lightblue;
+    color: blue;
+    width: 600px;
+}
