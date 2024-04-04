@@ -12,10 +12,14 @@
         <!-- ctrl + / -->
         <!-- First name -->
         <label for="fname">First name:</label>
-        <input type="text" id="fname" required value="Name"><br><br>
+        <input type="text" id="fname" value="Name"><br><br>
         <!-- last name -->
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" value="A" readonly><br><br>
+        <label for="lname">Password:</label>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+            id="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
         <label for="cars">Course:</label>
 
         <select id="dept">
@@ -62,7 +66,7 @@
         <label for="email">Email</label>
         <input type="email" id="email"><br><br>
         <Label>ZIP Code</Label>
-        <input type="text" pattern="[0-9]{5}" maxlength="6" title="Please enter a Zip Code" /><br><br>
+        <input type="text" maxlength="6" title="Please enter a Zip Code" /><br><br>
         <label>Department<label>
                 <select>
                     <option selected disabled hidden>DropDown</option>
@@ -71,7 +75,7 @@
                     <option>BE</option>
                 </select>
                 <br><br>
-                <button value="submit" disabled>Submit</button>
+                <button value="submit">Submit</button>
                 <button value="reset">Reset</button>
     </form>
 </body>

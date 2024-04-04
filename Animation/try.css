@@ -1,0 +1,256 @@
+/* .square {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    transition-duration: 3s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-delay: 3s;
+    transition: background-color 3s linear;
+
+
+} */
+
+/* .square:hover {
+    background-color: purple;
+    width: 600px;
+    transform: rotatex(40deg);
+    height: 500px;
+} */
+
+.box {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    animation-name: circle;
+    animation-duration: 5s;
+    position: relative;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    /* animation-delay: ; */
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes circle {
+    0% {
+        background-color: red;
+        left: 0;
+        top: 0;
+        rotate: 40deg;
+    }
+
+    25% {
+        background-color: blue;
+        left: 1600px;
+        top: 0px;
+        rotate: 120deg;
+    }
+
+    50% {
+        background-color: blue;
+        width: 400px;
+        height: 400px;
+        top: 1600px;
+        left: 1600px;
+    }
+
+    75% {
+        background-color: chartreuse;
+        left: 400px;
+        top: 400px;
+        rotate: 300deg;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 1600px;
+        rotate: 100deg;
+    }
+}
+
+/* .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 200px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: lightcoral;
+    text-transform: uppercase;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    animation-name: circle;
+    animation-duration: 3s;
+    /* animation-fill-mode:forwards; */
+/* animation-iteration-count: 2; */
+/* animation-timing-function: linear; */
+/* box-sizing: border-box; */
+
+
+/* } */
+
+
+/* .box2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: lightcoral;
+    text-transform: uppercase;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    animation-name: circle1;
+    animation-duration: 3s; */
+/* animation-fill-mode:forwards; */
+/* animation-iteration-count: 2; */
+/* animation-timing-function: linear; */
+
+/* }  */
+
+/* @keyframes circle {
+
+
+    0% {
+        background-color: darkgoldenrod;
+        left: 0px;
+        top: 0px;
+        rotate: 90deg;
+    }
+
+    25% {
+        background-color: seagreen;
+        left: 1600px;
+        top: 0px;
+        rotate: 120deg;
+        height: 50px;
+        width: 50px;
+        font-size: 10px;
+
+
+    }
+
+
+    50% {
+        background-color: darkgreen;
+        top: 900px;
+        left: 1600px;
+        rotate: 200deg;
+        height: 100px;
+        width: 100px
+    }
+
+    75% {
+        background-color: darkmagenta;
+        top: 600px;
+        left: 300px;
+        rotate: 250deg;
+        height: 150px;
+        width: 150px;
+    }
+
+    100% {
+        background-color: skyblue;
+        left: 0px;
+        top: 0px;
+        rotate: 300deg;
+
+    }
+
+}
+
+
+@keyframes circle1 {
+
+
+    0% {
+        background-color: darkgoldenrod;
+        left: 0px;
+        top: 0px;
+        /* rotate: 90deg; */
+}
+
+25% {
+    background-color: seagreen;
+    left: 100px;
+    top: 200px;
+    width: 200px;
+    height: 200px;
+    /* rotate: 120deg; */
+
+
+}
+
+
+50% {
+    background-color: darkgreen;
+    top: 400px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    /* rotate: 200deg; */
+
+
+}
+
+75% {
+    background-color: darkmagenta;
+    top: 600px;
+    left: 300px;
+    width: 600px;
+    height: 600px;
+    /* rotate: 250deg; */
+}
+
+100% {
+    background-color: skyblue;
+    right: 0px;
+    top: 0px;
+    /* rotate: 300deg; */
+
+}
+
+}
+
+*/
+/* .square{
+    width: 300px;
+    height: 300px;
+    background-color: slategray;
+    text-transform: uppercase;
+    display: grid;
+    align-items: center;
+    justify-content: center; */
+/* transition-duration: 3s;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(1,-0.44, 0.99, 1.29);
+    transition-delay: 1s; */
+/* transition: background-color 3s 1s linear; */
+
+/* } */
+
+/* .square:hover{ */
+/* width: 500px;
+    background-color: purple; */
+/* transform: rotate(190deg);  */
+/* transform: rotatey(40deg); */
+/* transform: scalex(2); */
+/* transform: translateY(30px); */
+/* transform: translateX(900px); */
+/* transform: translateZ(300px); */
+/* transform: translate3d(100px); */
+/* } */

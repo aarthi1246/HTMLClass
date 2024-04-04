@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #tzb {
+            width: 160px;
+            height: 160px;
+            transform-style: preserve-3d;
+            transform: rotate3d(1, 1, 1, 60deg);
+            margin: 80px auto;
+        }
+
+        .a,
+        .b,
+        .c,
+        .d,
+        .e,
+        .f {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .a {
+            transform: translateZ(0px);
+            background: green;
+        }
+
+        .b {
+            transform: translateZ(60px);
+            background: maroon;
+        }
+
+        .c {
+            transform: translateZ(120px);
+            background: yellow;
+        }
+
+        .d {
+            transform: translateZ(140px);
+            background: red;
+        }
+
+        .e {
+            transform: translateZ(-60px);
+            background: blue;
+        }
+
+        .f {
+            transform: translateZ(-120px);
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="tzb">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+    </div>
+
+</body>
+
+</html>

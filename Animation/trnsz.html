@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TranslateZ Example</title>
+    <style>
+        .container {
+            perspective: 1000px;
+            /* Create a perspective for 3D effect */
+        }
+
+
+
+        .box {
+            margin: 300px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: transform 0.5s;
+            /* Add smooth transition */
+            /* transform-style: preserve-3d; */
+            /* Ensure children elements maintain their 3D position */
+        }
+
+        .box:hover {
+            transform: translateZ(100px);
+            /* Move the element 50px towards the viewer */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

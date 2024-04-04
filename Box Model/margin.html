@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p {
+        /* p {
             background-color: pink;
         }
 
@@ -16,7 +16,7 @@
             margin-right: 50px;
             margin-bottom: 175px;
             margin-left: 100px;
-        }
+        } */
 
         /* .eg {
             border: 1px solid black;
@@ -37,13 +37,38 @@
             border: 1px solid black;
             margin: 25px;
         } */
+        p {
+            background-color: red;
+        }
+
+        div {
+            border: 2px solid black;
+            background-color: yellow;
+            /* height:; */
+        }
+
+        .eg {
+            border: 2px solid blue;
+            margin: 50px;
+        }
+
+        #id1 {
+            margin: 200px;
+        }
+
+        #id2 {
+            margin: 100px;
+        }
     </style>
 </head>
 
 <body>
-    <p>This paragraph is not displayed with specified margin. </p>
-    <p class="eg">This paragraph is displayed with specified margin.</p>
-    <p>paragraph</p>
+    <p id="id2">This paragraph is not displayed with specified margin. </p>
+    <div>
+        <p class="eg">This paragraph is displayed with specified margin.</p>
+    </div>
+
+    <p id="id1">paragraph</p>
 </body>
 
 </html>

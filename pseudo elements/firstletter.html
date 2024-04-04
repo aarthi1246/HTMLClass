@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        /* body {
             text-align: center;
         }
 
@@ -31,6 +31,24 @@
             color: crimson;
             text-shadow: 5px 8px 9px green;
             ;
+        } */
+        h1::first-letter {
+            color: violet;
+            font-size: 200px;
+            text-shadow: 2px 2px 2px blue;
+        }
+
+        p::first-line {
+            color: turquoise;
+            font-size: 50px;
+        }
+
+        h1::before {
+            content: "Hello!";
+        }
+
+        h1::after {
+            content: ":)";
         }
     </style>
 </head>
@@ -38,6 +56,9 @@
 <body>
     <h1> CRUD ACADEMY </h1>
     <h2> Software training institute in Chennai, Tamil Nadu</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam blanditiis molestiae distinctio, harum vero
+        esse a provident dolorem voluptatem, at commodi velit excepturi fuga obcaecati molestias voluptates officiis
+        maxime ex?</p>
 </body>
 
 </html>

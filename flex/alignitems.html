@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            height: 200px;
+            /* The center value aligns the flex items in the middle of the container */
+            align-items: center;
+            /* The flex-start value aligns the flex items at the top of the container */
+            /* align-items: flex-start; */
+            /* The flex-end value aligns the flex items at the bottom of the container: */
+            align-items: flex-end;
+            background-color: rgb(76, 181, 48);
+        }
+
+        .flex-container>div {
+            background-color: #17aea7;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            transition: width 2s;
+            text-align: center;
+            /* transition-delay: 1s; */
+
+        }
+
+        #div1 {
+            transition-timing-function: linear;
+        }
+
+        #div2 {
+            transition-timing-function: ease;
+        }
+
+        #div3 {
+            transition-timing-function: ease-in;
+        }
+
+        #div4 {
+            transition-timing-function: ease-out;
+        }
+
+        #div5 {
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">linear-same speed from start to end</div><br>
+    <div id="div2">ease-slow start,then fast,end slowly</div><br>
+    <div id="div3">ease-in->slow start</div><br>
+    <div id="div4">ease-out-> slow end</div><br>
+    <div id="div5">ease-in-out -> slow start & end</div><br>
+
+</body>
+
+</html>

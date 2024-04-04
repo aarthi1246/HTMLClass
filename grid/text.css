@@ -1,0 +1,210 @@
+.parent {
+    max-width: 100%;
+    max-height: 2000px;
+    display: grid;
+    grid-template-columns: 300px 800px auto;
+    column-gap: 10px;
+    /* column-gap: 20px; */
+    border: 1px solid black;
+    /* justify-content: space-around; */
+    /* box-sizing: border-box; */
+}
+
+
+
+.container1 {
+    display: grid;
+    width: 300px;
+    height: 700px;
+    grid-template-rows: repeat(7, 100px);
+    grid-template-columns: 300px;
+    border: 1px solid black;
+    margin-top: 20px;
+
+}
+
+
+.container1 div {
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+
+.header {
+    background-color: black;
+
+}
+
+.menu {
+    background-color: red;
+}
+
+.hero {
+    background-color: blue;
+}
+
+.main {
+    background-color: gray;
+}
+
+.banner {
+    background-color: yellow;
+}
+
+.extra {
+    background-color: green;
+}
+
+
+.image {
+    background-color: skyblue;
+}
+
+
+.container2 {
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 10vh 40vh 20vh 15vh 15vh;
+    grid-template-areas:
+        'h h h h'
+        'he he he he'
+        'me main main main'
+        'me main main main'
+        'me ba  ba ba'
+        'me ex ex im ';
+
+}
+
+
+.container2 div {
+    color: white;
+    padding: 30px;
+    display: grid;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header1 {
+    background-color: black;
+    grid-area: h;
+
+}
+
+.menu1 {
+    background-color: red;
+    grid-area: me;
+
+}
+
+.hero1 {
+    background-color: blue;
+    grid-area: he;
+}
+
+.main1 {
+    background-color: gray;
+    grid-area: main;
+}
+
+.banner1 {
+    background-color: yellow;
+    grid-area: ba;
+}
+
+.extra1 {
+    background-color: green;
+    grid-area: ex;
+}
+
+
+.image1 {
+    background-color: skyblue;
+    grid-area: im;
+}
+
+
+.container3 {
+    width: 500px;
+    height: 570px;
+    display: grid;
+    border: 1px solid black;
+    margin-top: 20px;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: 10vh 30vh 10vh 10vh 10vh;
+    /* grid-template-areas:
+    'h2 me me me'
+    'he he he he'
+    'ma ma im'
+    'ma ma ex'
+    'ba ba ba ba'; */
+
+
+}
+
+.container3 div {
+    color: white;
+    padding: 30px;
+    display: grid;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.header2 {
+    background-color: black;
+    /* grid-area: h2; */
+    grid-column: span 1;
+
+}
+
+.menu2 {
+    background-color: red;
+    /* grid-area: me; */
+    grid-column: span 4;
+
+}
+
+.hero2 {
+    background-color: blue;
+    /* grid-area: he; */
+    grid-column: span 5;
+}
+
+.main2 {
+    background-color: gray;
+    /* grid-area: ma; */
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.banner2 {
+    background-color: yellow;
+    /* grid-area: ba; */
+    grid-column: span 5;
+}
+
+.extra2 {
+    background-color: green;
+    /* grid-area: ex; */
+    grid-column-start: -1;
+    grid-column-start: -2;
+}
+
+
+.image2 {
+    background-color: skyblue;
+    /* grid-area: im; */
+    grid-column-start: -1;
+    grid-column-end: -2;
+}
